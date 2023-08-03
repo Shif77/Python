@@ -1,7 +1,21 @@
-weight = input("Give your Weight in kg: ")
-height = input("Give your Weight in m: ")
+print("Welcome to The Ultimate BMI Calculator")
 
-bmi = int(weight) / float(height) ** 2
-new = int(bmi)
-print(new)
+a = input("Enter your Weight in kg: ")
+
+b = input("Enter your height in m: ")
+
+bmi = round(float(a) / (float(b) ** 2))
+
+if bmi < 18.5:
+ print(f"Your BMI is {bmi} , You are UnderWeight")
+elif bmi < 25:
+  print(f"Your BMI is  {bmi} , You are Normal Weight")
+elif bmi < 30:
+  print(f"Your BMI is  {bmi} , You are OverWeight")
+elif bmi < 35:
+  print(f"Your BMI is  {bmi} , You are Obese")
+else:
+  print(f"Your BMI is  {bmi} ,  You are Clinically Obese")
+
+
 
